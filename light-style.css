@@ -95,6 +95,7 @@ main {
 
 .section-page {
   scroll-snap-align: start;
+  scroll-behavior: smooth;
   display: flex;
   justify-content: center;
   align-items: center;
