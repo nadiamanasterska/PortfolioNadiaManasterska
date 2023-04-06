@@ -5,11 +5,11 @@ var theme = document.querySelector('#theme-selctor');
 var image = document.querySelector('#dark-mode-icon');
 
 function darkMode() {
-  if (theme.getAttribute("href") == "style/light-style.css") {
-    theme.href = "style/dark-style.css";
+  if (theme.getAttribute("href") == "light-style.css") {
+    theme.href = "dark-style.css";
     image.src = "images/icons/light-mode-icon.png";
   } else {
-    theme.href = "style/light-style.css";
+    theme.href = "light-style.css";
     image.src = "images/icons/dark-mode-icon.png";
   }
 
