@@ -8,6 +8,9 @@
   
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 #modeButton {
   border: none;
@@ -94,6 +97,7 @@ main {
   height: auto;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .section-page {
