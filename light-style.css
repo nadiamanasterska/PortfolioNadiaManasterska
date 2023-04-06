@@ -90,6 +90,7 @@ nav {
 main {
   height: auto;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .section-page {
