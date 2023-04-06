@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nadia Manasterska</title>
+  <link rel="icon" type="image/x-icon"" href="/images/icons/nm-icon.png">
+  <link rel="stylesheet" href="style/light-style.css" id="theme-selctor">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- navigation bar -->
+    <nav>
+      <div class="logo"> portfolio </div>
+      <ul class="nav_items">
+        <li> <a href="#home">home</a></li>
+        <li> <a href="#about-me">about me</a></li>
+        <li> <a href="#skills">skills</a></li>
+        <li> <a href="#projects">projects</a></li>
+        <li> <a href="#cv">CV</a></li>
+        <li> <a href="#contact"> Contact</a></li>
+      </ul>
+      <button id="modeButton" onclick="darkMode()" title="view in different mode"> <img id="dark-mode-icon" src="/images/icons/dark-mode-icon.png" alt="dark-image"></button>
+    </nav>
+    <main>
+      <!-- home section -->
+      <section class="section-page" id="home">
+        <div class="home-div">
+          <img src="images/IMG_5779.jpeg" alt="profile picture" class="profile_pic">
+          <div class="hello_container">
+            <p class="hello"> Hi, I'm Nadia.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- about me section -->
+      <section class="section-page" id="about-me">
+        <p class="header-section"> About Me </p>
+        <div class="about-me-div">
+          <div class="about-me-description-div"> 
+            <p class="title-section"> Bio </p>
+            <p class="about-me-description"> My name's Nadia and I am currently studying in Cracow.
+              I am punctual, hard-working, responsible and I easily adapt to different challenging situations. 
+              I work great in teams as well as indivually. In my free time I love to travel and explore new places. 
+              I also love going to the gym or going for a walk with my dog Lanka. </p>  
+            <p class="about-me-description"> I am interested in Web Dev, Graphic Design, UX and UI. I hope to pursue my career in this direction. 
+              I am expanding my knowledge both during my classes and on my own during my free time.</p>
+            </div>
+          <div class="about-me-right-column">
+            <div class="education">
+              <p class="title-section">Education</p>
+              <p class="education-school"> AGH University of Science and Technology in Cracow </p>
+              <p class="major"> Social Informatics | 2022 - present </p>
+              <p class="education-school"> Jagiellonian University in Cracow </p>
+              <p class="major">Cognitive Science | 2021 - present </p>
+              <p class="education-school">Public High School number V in Opole </p>
+              <p class="major">2018 - 2021 </p>
+            </div>
+            <div class="experience">
+              <p class="title-section"> Experience </p>
+              <p class="work"> Waitress </p>
+              <p class="work-description"> Restaurant "Rzymskie Wakacje" in Opole</p>
+              <p class="work"> Tutor</p>
+              <p class="work-description"> Math, English </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills section -->
+      <section class="section-page" id="skills">
+        <p class="header-section"> Skills </p>
+        <div class="skills-full-container">
+          <div class="skills-container">
+            <div class="technologies">
+              <p class="title-section">Technologies</p>
+              <p class="skills-list">
+                HTML, CSS <br>
+                JavaScript <br>
+                Python <br>
+                Adobe Photoshop, Adobe Illustrator <br>
+                Affinity Designer <br>
+                Figma <br>
+                Canva <br>
+                Microsoft Office
+              </p>
+            </div>
+            <div class="languages">
+              <p class="title-section"> Languages</p>
+              <p class="skills-list">
+                Polish - native <br>
+                English - Advanced (Grade A on Cambridge FCE Certificate) <br>
+                German - Pre-Intermediate
+              </p>
+            </div>
+          </div>
+          <div class="skills-picture-div">
+            <img src="images/IMG_7044.jpeg" alt="" class="skills-picture">
+          </div>
+        </div>
+      </section>
+
+      <!-- projects section -->
+      <section class="section-page" id="projects">
+        <p class="header-section"> Projects</p>
+        <div class="projects-div">
+          
+          <div class="row">
+            <!-- project 1 -->
+            <div onclick="openPopUp1()" class="project-link" id="openPopUp">
+              <div class="row-container"> 
+                <p class="title-section"> Movie Posters </p>  
+                <p class="projects-text"> Four out of eight movie posters created during the 'Computer Grpahics' course in the academic year 2022/2023 as part of the Social Informatics Studies. </p>
+              </div>
+            </div>
+            <!--pop up 1 -->
+            <div class="modal" id="modal1">
+              <div class="modal-header">
+                <div class="modal-title">
+                  Movie Posters
+                </div>
+                <button onclick="closePopUp1()" class="modal-button"> &times; </button>
+              </div>
+              <div class="modal-body">
+                <img class="project1-images" src="/projects/project1/project1.png" alt="phineas and ferb movie poster">
+                <img class="project1-images" src="/projects/project1/project2.2.png" alt="spongebob movie poster">
+              </div>
+            </div>
+            <div id="modal-overlay"></div>
+
+            <!-- project 2 -->
+            <div onclick="openPopUp()" class="project-link" id="openPopUp">
+              <div class="row-container"> 
+                <p class="title-section"> Ongoing project </p>  
+                <p class="projects-text"> This project is still in progress!</p>
+              </div>
+            </div>
+            <!--pop up 2 -->
+            <div class="modal" id="modal">
+              <div class="modal-header">
+                <div class="modal-title">
+                  Ongoing project
+                </div>
+                <button onclick="closePopUp()" class="modal-button"> &times; </button>
+              </div>
+              <div class="modal-body">
+                This project is still in progress!
+              </div>
+            </div>
+            <div id="modal-overlay"></div>
+
+            <!-- project 3 -->
+            <div onclick="openPopUp()" class="project-link" id="openPopUp">
+              <div class="row-container"> 
+                <p class="title-section"> Ongoing project </p>  
+                <p class="projects-text"> This project is still in progress! </p>
+              </div>
+            </div>
+            <!--pop up 3 -->
+            <div class="modal" id="modal">
+              <div class="modal-header">
+                <div class="modal-title">
+                  Ongoing project
+                </div>
+                <button onclick="closePopUp()" class="modal-button"> &times; </button>
+              </div>
+              <div class="modal-body">
+                This project is still in progress!
+              </div>
+            </div>
+            <div id="modal-overlay"></div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- cv section -->
+      <section class="section-page" id="cv">
+        <p class="header-section">CV</p>
+        <div class="cv-div">
+          <div class="download_cv">
+            <a href="documents/Nadia_Manasterska_CV.pdf" class="button_cv" role="button", download="Nadia_Manasterska_CV"> Download my CV! </a>
+          </div>
+          <div class="view-cv">
+            <a href="documents/Nadia_Manasterska_CV.pdf" class="button-view-cv" target="_blank"> View my CV! </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section -->
+      <section class="section-page" id="contact"> 
+        <p class="header-section"> Contact </p>
+        <adress>
+          <a class="contact-link" href="mailto:nadiamanast@gmail.com"> <img src="images/icons/mail-icon.png" alt="mail icon" class="icon"> nadiamanast@gmail.com </a> 
+          <a class="contact-link" href="tel:+48503666019"> <img src="images/icons/phone-icon.png" alt="phone icon" class="icon"> +48 503 666 019 </a>
+          <p class="adress"> <img src="images/icons/pin-icon.png" alt="pin icon" class="icon"> Opole | Cracow </p>
+        </adress>
+      </section>
+    </main>
+    <footer>
+      <p class="copyright"> Nadia Manasterska | 2023</p>
+    </footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html> 
