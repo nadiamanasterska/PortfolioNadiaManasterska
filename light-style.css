@@ -340,6 +340,12 @@ main {
   height: 20rem;
 }
 
+.project2-images {
+  width: 9rem;
+  height: 20rem;
+  object-fit: cover;
+}
+
 
 /* cv style */
 

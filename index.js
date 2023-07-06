@@ -1,8 +1,8 @@
 // dark/light mode
 
-var button = document.querySelector('#modeButton');
-var theme = document.querySelector('#theme-selctor');
-var image = document.querySelector('#dark-mode-icon');
+var button = document.querySelector("#modeButton");
+var theme = document.querySelector("#theme-selctor");
+var image = document.querySelector("#dark-mode-icon");
 
 function darkMode() {
   if (theme.getAttribute("href") == "light-style.css") {
@@ -12,10 +12,7 @@ function darkMode() {
     theme.href = "light-style.css";
     image.src = "images/icons/dark-mode-icon.png";
   }
-
 }
-
-
 
 // pop-up windows
 
@@ -33,6 +30,18 @@ function closePopUp1() {
   overlay.style.display = "none";
 }
 
+const modalTwo = document.getElementById("modal2");
+
+function openPopUp2() {
+  modalTwo.style.visibility = "visible";
+  overlay.style.display = "block";
+  modalTwo.style.opacity = "1";
+}
+function closePopUp2() {
+  modalTwo.style.visibility = "hidden";
+  overlay.style.display = "none";
+}
+
 const modal = document.getElementById("modal");
 
 function openPopUp() {
@@ -44,4 +53,3 @@ function closePopUp() {
   modal.style.visibility = "hidden";
   overlay.style.display = "none";
 }
-

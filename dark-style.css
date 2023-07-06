@@ -353,6 +353,12 @@ main {
   filter: brightness(60%);
 }
 
+.project2-images {
+  width: 9rem;
+  height: 20rem;
+  object-fit: cover;
+}
+
 /* cv style */
 
 .cv-div {
