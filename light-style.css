@@ -218,7 +218,8 @@ main {
 .work,
 .title-section,
 .header-section {
-  font-weight: 600;
+  font-weight: 500;
+  color: red;
 }
 
 /* skills style */
