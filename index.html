@@ -21,6 +21,7 @@
         <li> <a href="#about-me">about me</a></li>
         <li> <a href="#skills">skills</a></li>
         <li> <a href="#projects">projects</a></li>
+        <li> <a href="#cv">Portfolio</a></li>
         <li> <a href="#contact"> Contact</a></li>
       </ul>
       <button id="modeButton" onclick="darkMode()" title="view in different mode"> <img id="dark-mode-icon" src="images/icons/dark-mode-icon.png" alt="dark-image"></button>
@@ -55,7 +56,7 @@
               <p class="education-school"> AGH University of Science and Technology in Cracow </p>
               <p class="major"> Social Informatics | 2022 - present </p>
               <p class="education-school"> Jagiellonian University in Cracow </p>
-              <p class="major">Cognitive Science | 2021 - 2023 </p>
+              <p class="major">Cognitive Science | 2021 - present </p>
               <p class="education-school">Public High School number V in Opole </p>
               <p class="major">2018 - 2021 </p>
             </div>
@@ -159,23 +160,35 @@
             <!-- project 3 -->
             <div onclick="openPopUp()" class="project-link" id="openPopUp">
               <div class="row-container"> 
-                <p class="title-section"> Ongoing project </p>  
-                <p class="projects-text"> This project is still in progress! </p>
+                <p class="title-section"> Kino Agrafka </p>  
+                <p class="projects-text"> Home page of a website redesigned with 2 other students during the "Designing Interfaces. Basics of Ergonomy" course. All rights to the photos belong to Kino Agrafka.</p>
               </div>
             </div>
             <!--pop up 3 -->
             <div class="modal" id="modal">
               <div class="modal-header">
                 <div class="modal-title">
-                  Ongoing project
+                  Kino Agrafka
                 </div>
                 <button onclick="closePopUp()" class="modal-button"> &times; </button>
               </div>
               <div class="modal-body">
-                This project is still in progress!
+                <img class="project3-images" alt="kino agrafka app screenshot" src="projects/project3/home_page.png">
               </div>
             </div>
             <div id="modal-overlay"></div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- cv section -->
+      <section class="section-page" id="cv">
+        <p class="header-section">Portfolio</p>
+        <div class="cv-div">
+          
+          <div class="view-cv">
+            <a href="Manasterska_Nadia_Portfolio.pdf" class="button-view-cv" target="_blank"> View my Portfolio! </a>
           </div>
         </div>
       </section>
