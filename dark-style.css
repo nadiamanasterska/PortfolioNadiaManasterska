@@ -369,6 +369,7 @@ main {
   width: 50rem;
   height: 30rem;
   object-fit: cover;
+  filter: brightness(60%);
 }
 
 /* cv style */
