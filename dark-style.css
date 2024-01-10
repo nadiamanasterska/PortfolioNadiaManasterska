@@ -365,6 +365,12 @@ main {
   object-fit: cover;
 }
 
+.project3-images {
+  width: 50rem;
+  height: 30rem;
+  object-fit: cover;
+}
+
 /* cv style */
 
 .cv-div {
